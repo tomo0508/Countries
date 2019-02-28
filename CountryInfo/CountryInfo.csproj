@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{888C6909-752C-4C32-ABFE-AD3638B3F62D}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CountryInfo</RootNamespace>
+    <AssemblyName>CountryInfo</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>CountryInfo_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\Headers.cs" />
+    <Compile Include="Model\Constants.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\Currency.cs" />
+    <Compile Include="Converters\NumberFormatConverter.cs" />
+    <Compile Include="Model\HighLightCountry.cs" />
+    <Compile Include="Model\IpDetails.cs" />
+    <Compile Include="Model\Language.cs" />
+    <Compile Include="Model\Translations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="Assets\flagspng\abw.png" />
+    <Content Include="Assets\flagspng\afg.png" />
+    <Content Include="Assets\flagspng\ago.png" />
+    <Content Include="Assets\flagspng\aia.png" />
+    <Content Include="Assets\flagspng\ala.png" />
+    <Content Include="Assets\flagspng\alb.png" />
+    <Content Include="Assets\flagspng\and.png" />
+    <Content Include="Assets\flagspng\are.png" />
+    <Content Include="Assets\flagspng\arg.png" />
+    <Content Include="Assets\flagspng\arm.png" />
+    <Content Include="Assets\flagspng\asm.png" />
+    <Content Include="Assets\flagspng\ata.png" />
+    <Content Include="Assets\flagspng\atf.png" />
+    <Content Include="Assets\flagspng\atg.png" />
+    <Content Include="Assets\flagspng\aus.png" />
+    <Content Include="Assets\flagspng\aut.png" />
+    <Content Include="Assets\flagspng\aze.png" />
+    <Content Include="Assets\flagspng\bdi.png" />
+    <Content Include="Assets\flagspng\bel.png" />
+    <Content Include="Assets\flagspng\ben.png" />
+    <Content Include="Assets\flagspng\bes.png" />
+    <Content Include="Assets\flagspng\bfa.png" />
+    <Content Include="Assets\flagspng\bgd.png" />
+    <Content Include="Assets\flagspng\bgr.png" />
+    <Content Include="Assets\flagspng\bhr.png" />
+    <Content Include="Assets\flagspng\bhs.png" />
+    <Content Include="Assets\flagspng\bih.png" />
+    <Content Include="Assets\flagspng\blm.png" />
+    <Content Include="Assets\flagspng\blr.png" />
+    <Content Include="Assets\flagspng\blz.png" />
+    <Content Include="Assets\flagspng\bmu.png" />
+    <Content Include="Assets\flagspng\bol.png" />
+    <Content Include="Assets\flagspng\bra.png" />
+    <Content Include="Assets\flagspng\brb.png" />
+    <Content Include="Assets\flagspng\brn.png" />
+    <Content Include="Assets\flagspng\btn.png" />
+    <Content Include="Assets\flagspng\bvt.png" />
+    <Content Include="Assets\flagspng\bwa.png" />
+    <Content Include="Assets\flagspng\caf.png" />
+    <Content Include="Assets\flagspng\can.png" />
+    <Content Include="Assets\flagspng\cck.png" />
+    <Content Include="Assets\flagspng\che.png" />
+    <Content Include="Assets\flagspng\chl.png" />
+    <Content Include="Assets\flagspng\chn.png" />
+    <Content Include="Assets\flagspng\civ.png" />
+    <Content Include="Assets\flagspng\cmr.png" />
+    <Content Include="Assets\flagspng\cod.png" />
+    <Content Include="Assets\flagspng\cog.png" />
+    <Content Include="Assets\flagspng\cok.png" />
+    <Content Include="Assets\flagspng\col.png" />
+    <Content Include="Assets\flagspng\com.png" />
+    <Content Include="Assets\flagspng\cpv.png" />
+    <Content Include="Assets\flagspng\cri.png" />
+    <Content Include="Assets\flagspng\cub.png" />
+    <Content Include="Assets\flagspng\cuw.png" />
+    <Content Include="Assets\flagspng\cxr.png" />
+    <Content Include="Assets\flagspng\cym.png" />
+    <Content Include="Assets\flagspng\cyp.png" />
+    <Content Include="Assets\flagspng\cze.png" />
+    <Content Include="Assets\flagspng\deu.png" />
+    <Content Include="Assets\flagspng\dji.png" />
+    <Content Include="Assets\flagspng\dma.png" />
+    <Content Include="Assets\flagspng\dnk.png" />
+    <Content Include="Assets\flagspng\dom.png" />
+    <Content Include="Assets\flagspng\dza.png" />
+    <Content Include="Assets\flagspng\ecu.png" />
+    <Content Include="Assets\flagspng\egy.png" />
+    <Content Include="Assets\flagspng\eri.png" />
+    <Content Include="Assets\flagspng\esh.png" />
+    <Content Include="Assets\flagspng\esp.png" />
+    <Content Include="Assets\flagspng\est.png" />
+    <Content Include="Assets\flagspng\eth.png" />
+    <Content Include="Assets\flagspng\fin.png" />
+    <Content Include="Assets\flagspng\fji.png" />
+    <Content Include="Assets\flagspng\flk.png" />
+    <Content Include="Assets\flagspng\fra.png" />
+    <Content Include="Assets\flagspng\fro.png" />
+    <Content Include="Assets\flagspng\fsm.png" />
+    <Content Include="Assets\flagspng\gab.png" />
+    <Content Include="Assets\flagspng\gbr.png" />
+    <Content Include="Assets\flagspng\geo.png" />
+    <Content Include="Assets\flagspng\ggy.png" />
+    <Content Include="Assets\flagspng\gha.png" />
+    <Content Include="Assets\flagspng\gib.png" />
+    <Content Include="Assets\flagspng\gin.png" />
+    <Content Include="Assets\flagspng\glp.png" />
+    <Content Include="Assets\flagspng\gmb.png" />
+    <Content Include="Assets\flagspng\gnb.png" />
+    <Content Include="Assets\flagspng\gnq.png" />
+    <Content Include="Assets\flagspng\grc.png" />
+    <Content Include="Assets\flagspng\grd.png" />
+    <Content Include="Assets\flagspng\grl.png" />
+    <Content Include="Assets\flagspng\gtm.png" />
+    <Content Include="Assets\flagspng\guf.png" />
+    <Content Include="Assets\flagspng\gum.png" />
+    <Content Include="Assets\flagspng\guy.png" />
+    <Content Include="Assets\flagspng\hkg.png" />
+    <Content Include="Assets\flagspng\hmd.png" />
+    <Content Include="Assets\flagspng\hnd.png" />
+    <Content Include="Assets\flagspng\hrv.png" />
+    <Content Include="Assets\flagspng\hti.png" />
+    <Content Include="Assets\flagspng\hun.png" />
+    <Content Include="Assets\flagspng\idn.png" />
+    <Content Include="Assets\flagspng\imn.png" />
+    <Content Include="Assets\flagspng\ind.png" />
+    <Content Include="Assets\flagspng\iot.png" />
+    <Content Include="Assets\flagspng\irl.png" />
+    <Content Include="Assets\flagspng\irn.png" />
+    <Content Include="Assets\flagspng\irq.png" />
+    <Content Include="Assets\flagspng\isl.png" />
+    <Content Include="Assets\flagspng\isr.png" />
+    <Content Include="Assets\flagspng\ita.png" />
+    <Content Include="Assets\flagspng\jam.png" />
+    <Content Include="Assets\flagspng\jey.png" />
+    <Content Include="Assets\flagspng\jor.png" />
+    <Content Include="Assets\flagspng\jpn.png" />
+    <Content Include="Assets\flagspng\kaz.png" />
+    <Content Include="Assets\flagspng\ken.png" />
+    <Content Include="Assets\flagspng\kgz.png" />
+    <Content Include="Assets\flagspng\khm.png" />
+    <Content Include="Assets\flagspng\kir.png" />
+    <Content Include="Assets\flagspng\kna.png" />
+    <Content Include="Assets\flagspng\kor.png" />
+    <Content Include="Assets\flagspng\kos.png" />
+    <Content Include="Assets\flagspng\kwt.png" />
+    <Content Include="Assets\flagspng\lao.png" />
+    <Content Include="Assets\flagspng\lbn.png" />
+    <Content Include="Assets\flagspng\lbr.png" />
+    <Content Include="Assets\flagspng\lby.png" />
+    <Content Include="Assets\flagspng\lca.png" />
+    <Content Include="Assets\flagspng\lie.png" />
+    <Content Include="Assets\flagspng\lka.png" />
+    <Content Include="Assets\flagspng\lso.png" />
+    <Content Include="Assets\flagspng\ltu.png" />
+    <Content Include="Assets\flagspng\lux.png" />
+    <Content Include="Assets\flagspng\lva.png" />
+    <Content Include="Assets\flagspng\mac.png" />
+    <Content Include="Assets\flagspng\maf.png" />
+    <Content Include="Assets\flagspng\mar.png" />
+    <Content Include="Assets\flagspng\mco.png" />
+    <Content Include="Assets\flagspng\mda.png" />
+    <Content Include="Assets\flagspng\mdg.png" />
+    <Content Include="Assets\flagspng\mdv.png" />
+    <Content Include="Assets\flagspng\mex.png" />
+    <Content Include="Assets\flagspng\mhl.png" />
+    <Content Include="Assets\flagspng\mkd.png" />
+    <Content Include="Assets\flagspng\mli.png" />
+    <Content Include="Assets\flagspng\mlt.png" />
+    <Content Include="Assets\flagspng\mmr.png" />
+    <Content Include="Assets\flagspng\mne.png" />
+    <Content Include="Assets\flagspng\mng.png" />
+    <Content Include="Assets\flagspng\mnp.png" />
+    <Content Include="Assets\flagspng\moz.png" />
+    <Content Include="Assets\flagspng\mrt.png" />
+    <Content Include="Assets\flagspng\msr.png" />
+    <Content Include="Assets\flagspng\mtq.png" />
+    <Content Include="Assets\flagspng\mus.png" />
+    <Content Include="Assets\flagspng\mwi.png" />
+    <Content Include="Assets\flagspng\mys.png" />
+    <Content Include="Assets\flagspng\myt.png" />
+    <Content Include="Assets\flagspng\nam.png" />
+    <Content Include="Assets\flagspng\ncl.png" />
+    <Content Include="Assets\flagspng\ner.png" />
+    <Content Include="Assets\flagspng\nfk.png" />
+    <Content Include="Assets\flagspng\nga.png" />
+    <Content Include="Assets\flagspng\nic.png" />
+    <Content Include="Assets\flagspng\niu.png" />
+    <Content Include="Assets\flagspng\nld.png" />
+    <Content Include="Assets\flagspng\nor.png" />
+    <Content Include="Assets\flagspng\npl.png" />
+    <Content Include="Assets\flagspng\nru.png" />
+    <Content Include="Assets\flagspng\nzl.png" />
+    <Content Include="Assets\flagspng\omn.png" />
+    <Content Include="Assets\flagspng\pak.png" />
+    <Content Include="Assets\flagspng\pan.png" />
+    <Content Include="Assets\flagspng\pcn.png" />
+    <Content Include="Assets\flagspng\per.png" />
+    <Content Include="Assets\flagspng\phl.png" />
+    <Content Include="Assets\flagspng\plw.png" />
+    <Content Include="Assets\flagspng\png.png" />
+    <Content Include="Assets\flagspng\pol.png" />
+    <Content Include="Assets\flagspng\pri.png" />
+    <Content Include="Assets\flagspng\prk.png" />
+    <Content Include="Assets\flagspng\prt.png" />
+    <Content Include="Assets\flagspng\pry.png" />
+    <Content Include="Assets\flagspng\pse.png" />
+    <Content Include="Assets\flagspng\pyf.png" />
+    <Content Include="Assets\flagspng\qat.png" />
+    <Content Include="Assets\flagspng\reu.png" />
+    <Content Include="Assets\flagspng\rou.png" />
+    <Content Include="Assets\flagspng\rus.png" />
+    <Content Include="Assets\flagspng\rwa.png" />
+    <Content Include="Assets\flagspng\sau.png" />
+    <Content Include="Assets\flagspng\sdn.png" />
+    <Content Include="Assets\flagspng\sen.png" />
+    <Content Include="Assets\flagspng\sgp.png" />
+    <Content Include="Assets\flagspng\sgs.png" />
+    <Content Include="Assets\flagspng\shn.png" />
+    <Content Include="Assets\flagspng\sjm.png" />
+    <Content Include="Assets\flagspng\slb.png" />
+    <Content Include="Assets\flagspng\sle.png" />
+    <Content Include="Assets\flagspng\slv.png" />
+    <Content Include="Assets\flagspng\smr.png" />
+    <Content Include="Assets\flagspng\som.png" />
+    <Content Include="Assets\flagspng\spm.png" />
+    <Content Include="Assets\flagspng\srb.png" />
+    <Content Include="Assets\flagspng\ssd.png" />
+    <Content Include="Assets\flagspng\stp.png" />
+    <Content Include="Assets\flagspng\sur.png" />
+    <Content Include="Assets\flagspng\svk.png" />
+    <Content Include="Assets\flagspng\svn.png" />
+    <Content Include="Assets\flagspng\swe.png" />
+    <Content Include="Assets\flagspng\swz.png" />
+    <Content Include="Assets\flagspng\sxm.png" />
+    <Content Include="Assets\flagspng\syc.png" />
+    <Content Include="Assets\flagspng\syr.png" />
+    <Content Include="Assets\flagspng\tca.png" />
+    <Content Include="Assets\flagspng\tcd.png" />
+    <Content Include="Assets\flagspng\tgo.png" />
+    <Content Include="Assets\flagspng\tha.png" />
+    <Content Include="Assets\flagspng\tjk.png" />
+    <Content Include="Assets\flagspng\tkl.png" />
+    <Content Include="Assets\flagspng\tkm.png" />
+    <Content Include="Assets\flagspng\tls.png" />
+    <Content Include="Assets\flagspng\ton.png" />
+    <Content Include="Assets\flagspng\tto.png" />
+    <Content Include="Assets\flagspng\tun.png" />
+    <Content Include="Assets\flagspng\tur.png" />
+    <Content Include="Assets\flagspng\tuv.png" />
+    <Content Include="Assets\flagspng\twn.png" />
+    <Content Include="Assets\flagspng\tza.png" />
+    <Content Include="Assets\flagspng\uga.png" />
+    <Content Include="Assets\flagspng\ukr.png" />
+    <Content Include="Assets\flagspng\umi.png" />
+    <Content Include="Assets\flagspng\unk.png" />
+    <Content Include="Assets\flagspng\ury.png" />
+    <Content Include="Assets\flagspng\usa.png" />
+    <Content Include="Assets\flagspng\uzb.png" />
+    <Content Include="Assets\flagspng\vat.png" />
+    <Content Include="Assets\flagspng\vct.png" />
+    <Content Include="Assets\flagspng\ven.png" />
+    <Content Include="Assets\flagspng\vgb.png" />
+    <Content Include="Assets\flagspng\vir.png" />
+    <Content Include="Assets\flagspng\vnm.png" />
+    <Content Include="Assets\flagspng\vut.png" />
+    <Content Include="Assets\flagspng\wlf.png" />
+    <Content Include="Assets\flagspng\wsm.png" />
+    <Content Include="Assets\flagspng\yem.png" />
+    <Content Include="Assets\flagspng\zaf.png" />
+    <Content Include="Assets\flagspng\zmb.png" />
+    <Content Include="Assets\flagspng\zwe.png" />
+    <Content Include="Assets\Json\countries.geo.json" />
+    <Content Include="Assets\Json\country.json" />
+    <None Include="CountryInfo_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GeoJSON.Net">
+      <Version>1.1.70</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Telerik.UI.for.UniversalWindowsPlatform">
+      <Version>1.0.1.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
